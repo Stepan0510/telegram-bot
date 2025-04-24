@@ -13,5 +13,6 @@ async def start_handler(message: types.Message):
     else:
         await message.answer("Привет! Нажми кнопку «Участвовать», чтобы вступить в розыгрыш.")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+    from aiogram import executor
     executor.start_polling(dp, skip_updates=True)
